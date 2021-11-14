@@ -35,5 +35,5 @@ services:
       type: ClusterIP
   http:
     spec:
-      port: 22
+      port: 80
       type: ClusterIP

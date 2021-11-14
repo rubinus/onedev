@@ -1,7 +1,6 @@
 image:
-  repository:
   pullPolicy: IfNotPresent
-  tag: ${buildVersion}
+  tag: ""
 
 ingress:
   enabled: false
@@ -28,3 +27,13 @@ resources:
     memory: 2Gi
   mysql:
     memory: 500Mi
+
+services:
+  ssh:
+    spec:
+      port: 22
+      type: ClusterIP
+  http:
+    spec:
+      port: 22
+      type: ClusterIP
